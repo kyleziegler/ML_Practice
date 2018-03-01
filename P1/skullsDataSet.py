@@ -2,6 +2,9 @@
 # ML Practice
 
 from IPython.core.display import HTML
+import numpy as np
+import pandas 
+from sklearn.neighbors import KNeighborsClassifier
 
 HTML("""
     <style type="text/css">
@@ -16,4 +19,8 @@ HTML("""
     }
     </style>
 """)
+
+skullsDataSet = pandas.read_csv("skulls.csv",delimiter = ",")
+print(skullsDataSet)
+print(type(skullsDataSet))
 
