@@ -1,5 +1,6 @@
 # Kyle Ziegler 
 # ML Practice
+# Python 3.x
 
 from sklearn.datasets import load_digits
 from sklearn import svm
