@@ -78,7 +78,9 @@ y = target
 neigh = KNeighborsClassifier(n_neighbors=1)
 neigh.fit(X,y)
 
-print("Predtiction: ", neigh.predict(workingSet[10]))
-#print("Actual: " + y[10])
 
-
+# Expecting a 2D array here, added another series of brackets around the working set to 
+# fix a bug.
+print("Predtiction: ", neigh.predict([workingSet[10]]))
+#print(workingSet)
+print("Actual: " + np.array_str(y[10]))
