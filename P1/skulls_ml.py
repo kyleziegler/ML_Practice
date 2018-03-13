@@ -3,7 +3,6 @@
 # Python 3.x
 # Intro to Supervised ML and the skulls dataset.
 
-from IPython.core.display import HTML
 import numpy as np
 import pandas 
 from sklearn.neighbors import KNeighborsClassifier
@@ -38,19 +37,6 @@ def targetAndtargetNames(numpyArray, targetColumnIndex):
         target_names.append(targetName)
     return np.asarray(target), target_names
 
-HTML("""
-    <style type="text/css">
-    #ans:hover { 
-        background-color: black; 
-    }
-    #ans {  
-        padding: 6px; 
-        background-color: white; 
-        border: green 2px solid; 
-        font-weight: bold; 
-    }
-    </style>
-""")
 
 workingSet = pandas.read_csv("skulls.csv",delimiter = ",")
 #print(workingSet)
