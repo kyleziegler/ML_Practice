@@ -7,7 +7,7 @@ import numpy as np
 import pandas 
 from sklearn.neighbors import KNeighborsClassifier
 
-dataSet = pandas.read_csv("skulls.csv",delimiter = ",")
+dataSet = pandas.read_csv("./Datasets/skulls.csv",delimiter = ",")
 
 def removeColumns(pandasArray, *column):
     return pandasArray.drop(pandasArray.columns[[column]], axis=1).values

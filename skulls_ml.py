@@ -38,7 +38,7 @@ def targetAndtargetNames(numpyArray, targetColumnIndex):
     return np.asarray(target), target_names
 
 
-workingSet = pandas.read_csv("skulls.csv",delimiter = ",")
+workingSet = pandas.read_csv("./Datasets/skulls.csv",delimiter = ",")
 #print(workingSet)
 #print(type(workingSet))
 
